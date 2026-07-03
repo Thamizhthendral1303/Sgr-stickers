@@ -193,7 +193,7 @@ export const Contact = () => {
               <Typography variant="body2" sx={{ color: "#a6adbb", mb: 4 }}>
                 Have general questions? Write to us and our support team will respond to your queries.
               </Typography>
-              
+
               <form onSubmit={handleSubmit}>
                 <Grid container spacing={3}>
                   <Grid size={{ xs: 12, sm: 6 }}>
@@ -208,7 +208,7 @@ export const Contact = () => {
                       disabled={submitting}
                     />
                   </Grid>
-                  
+
                   <Grid size={{ xs: 12, sm: 6 }}>
                     <TextField
                       required
@@ -259,16 +259,15 @@ export const Contact = () => {
         <Box sx={{ borderRadius: 4, overflow: "hidden", border: "1px solid rgba(255, 255, 255, 0.06)", height: 450, bgcolor: "#121216" }}>
           {/* Dynamic Google Maps embed based on address or nice styled mock placeholder map */}
           <iframe
-            title="SGR Stickers Map Location"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.9712173160275!2d77.59253457597148!3d12.97365641477793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1672c10b47df%3A0xe54d92ee24075199!2sBangalore%20City%20Center!5e0!3m2!1sen!2sin!4v1689100000000!5m2!1sen!2sin"
+            title="SGR Stickers Location"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d422.56806212810494!2d79.30738924800187!3d11.044261400000009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baad3ebe5a70d5d%3A0xde368d633f59d21f!2s28V5%2BM3V%2C%20Sripuranthan%20North%2C%20Tamil%20Nadu%20621701!5e1!3m2!1sen!2sin!4v1782881540143!5m2!1sen!2sin"
             width="100%"
             height="100%"
-            style={{ border: 0, filter: "invert(90%) hue-rotate(180deg) grayscale(80%)" }}
-            allowFullScreen=""
+
+
             loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </Box>
+
+          />        </Box>
       </Container>
     </Box>
   );
